@@ -9,7 +9,7 @@ namespace AssignmentFirst.Models
     {
         public int Id { get; set; }
         public string LocationName { get; set; }
-        public ICollection<Sale> Sales { get; set; }
+        public virtual ICollection<Sale> Sales { get; set; }
 
         public StoreLocation()
         {

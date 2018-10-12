@@ -9,8 +9,10 @@ namespace AssignmentFirst.Models
     {
         public int Id { get; set; }
         public DateTimeOffset  Date { get; set; }
-        public Customer Customer { get; set; }
-        public StoreLocation StoreLocation { get; set; }
+        public int CustomerId { get; set; }
+        public virtual Customer Customer { get; set; }
+        public int StoreLocationId { get; set; }
+        public virtual StoreLocation StoreLocation { get; set; }
         public string EmployeeId { get; set; }
         public Employee Employee{ get; set; }
         public string EmployeeToApproveId { get; set; }
